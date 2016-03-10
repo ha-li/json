@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/json2.js"></script><!--// this script tag needs to be exaclty as is
+    //-->
+    <title>Simple JSON Testing</title>
+</head>
+<body>
+    <script>
+        var body = document.getElementsByTagName("body")[0];
+        function log(jsonText) {
+            body.innerHTML += '"' + jsonText + '"<br/>';
+            alert (jsonText);
+
+        }
+        var author = new Object();
+        author.name = "Ben";
+        author.age = 36;
+        author.pets = [
+            { name : "Waverly", age : 3.5 },
+            { name : "Westley", age : 4}
+        ];
+
+        var JSONtext = JSON.stringify(author);
+        log(JSONtext);
+
+    </script>
+</body>
+</html>
