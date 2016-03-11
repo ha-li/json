@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="js/json2.js"></script><!--// this script tag needs to be exaclty as is
+
+
+    <script src="../js/curry.js"></script>
+    <script src="../js/json2.js"></script><!--// this script tag needs to be exaclty as is
     //-->
     <title>Simple JSON Testing</title>
 </head>
@@ -10,8 +13,8 @@
     <script>
         var body = document.getElementsByTagName("body")[0];
         function log(jsonText) {
-            body.innerHTML += '"' + jsonText + '"<br/>';
-            //alert (jsonText);
+            //body.innerHTML += '"' + jsonText + '"<br/>';
+            alert (jsonText);
 
         }
         var author = new Object();
@@ -23,8 +26,8 @@
         ];
 
         var JSONtext = JSON.stringify(author);
-        log(JSONtext);
 
+        log(jformat(7));
     </script>
 </body>
 </html>
