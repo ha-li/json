@@ -26,7 +26,10 @@
         ];
 
         var JSONtext = JSON.stringify(author);
-
+        var author_parsed = JSON.parse(JSONtext);
+        console.log(author_parsed);
+        console.log(author_parsed.name);
+        console.log("hello");
         log(jformat(7));
     </script>
 </body>

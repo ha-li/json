@@ -1,0 +1,11 @@
+var i = 20;
+print(++i + ++i);
+i = 20;
+print(i++ + i++);
+i = 20;
+print (i++ + i);
+i = 20;
+print(i + i++);
+i = 20;
+print(i++ + i++);
+print (i);
